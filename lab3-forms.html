@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Coffe Order Form</title>
+        <body> 
+            <p><h1>Coffee Order Form</h1></p>
+            <form action="https://www.w3schools.com/action_page.php" method="get">
+            <p>
+                <label for="name">Name</label>
+<input type="text"
+id="name"name="name" /></p>
+<p><label for="mail">Email:</label>
+<input type="email" id="mail" name="adress email" /></p>
+                <!--coffee type-->
+  <label for="coffeeType">Coffee Type:</label>
+  <select id="coffeeType" name="coffeeType">
+    <option value="Latte">Latte</option>
+    <option value="Cappuccino">Cappuccino</option>
+    <option value="Americano">Americano</option>
+    <option value="Espresso">Espresso</option>
+  </select>
+  <h1> Size</h1>
+ <input type="radio" id="small" name="size" value="small">
+ <label for="small">small</label>
+ <input type="radio" id="medium" name="size" value="medium">
+    <label for="medium">medium</label>
+    <input type="radio" id="large" name="size" value="large">
+    <label for="large">large</label>
+    <h1>Extra</h1>
+  <input type="checkbox" id="whippedCream" name="extras" value="Whipped Cream">
+    <label for="whippedCream">Whipped Cream</label><br>
+    <input type="checkbox" id="extraShot" name="extras" value="Extra Shot">
+    <label for="extraShot">Extra Shot</label><br>
+    <input type="checkbox" id="Almond Milk" name="extras" value="Almomd Milk">
+    <label for="soyMilk">Soy Milk</label><br><br>    
+    <h1>Special Instructions</h1>            
+    <label for="instructions">Instructions:</label><br>
+<textarea id="instructions" name="instructions"></textarea><br><br>
+<button type="submit">Submit Order</button>
+            </form>
+        </body>
