@@ -1,0 +1,8 @@
+body{background-color: lightblue; font-family: Arial, sans-serif;}
+h1{color:rgb(14, 61, 78);text-align: center;}
+p{color:rgba(68, 108, 64, 0.821);padding: 10px;}
+li{color:orange;}
+li::marker{color:Black}
+a{color: blue;padding: 10px;}
+a:hover{text-decoration:none;}
+div{border:solid black;background-color: lightgray;margin:20px;padding:15px;text-align: center;}
