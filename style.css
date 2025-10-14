@@ -1,0 +1,96 @@
+body {
+    font-family: 'geogia',serif;
+    background-color: #e29e63;
+    color: #250505;
+    margin:0;
+}
+/*grid layout structure*/
+body {
+    display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+.header {
+    grid-area: header;
+    background-color: #a1683a;
+    padding: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+.nav {
+    grid-area: nav;
+    background-color: #e0cfc2;
+    padding: 1.5rem;
+    text-align: center;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.nav a {
+    text-decoration: none;
+    color: #4b2e2e;
+    font-weight: bold;
+}
+.main-content{
+    grid-area:main;
+    text-align: center;
+    background-color: #f7e8e0;
+    padding: 2rem;
+}
+.main-content h2{
+    text-align:center;
+    margin-bottom: 1.5rem;
+}
+/*Flexbox for featured coffees*/
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.flex-item {
+    background-color: #f7e8e0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 120px;
+    min-height: auto;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.flex-item:hover {
+  transform: scale(1.05);
+}
+.footer { 
+    grid-area:footer;
+    background: #e0cfc2;
+    text-align: center;
+    padding: 1rem;
+    background-color: #cca689;
+}
+/*responsive design*/
+@media (min-width: 768px) {body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+            grid-template-columns: 250px 1fr;}
+            .nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .nav {
+                text-align: left;}}
