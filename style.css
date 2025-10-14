@@ -80,7 +80,7 @@ body {
     background-color: #cca689;
 }
 /*responsive design*/
-@media (min-width: 768px) {body {
+@media (max-width: 76px) {body {
         grid-template-areas:
             "header"
             "nav"
@@ -93,4 +93,5 @@ body {
                 gap: 1rem;
             }
             .nav {
+
                 text-align: left;}}
